@@ -20,7 +20,7 @@
 <meta property="og:title" content="Challenge Monteur Nation — Formation Gratuite au Montage Vidéo (2 Jours)">
 <meta property="og:description" content="2 jours de live gratuit sur YouTube pour apprendre le montage vidéo pro avec Adobe Premiere Pro et poser les bases de tes premiers revenus freelance.">
 <meta property="og:image" content="/img/image.png">
-<meta property="og:image:width" content="720">
+<meta property="og:image:width" content="1080">
 <meta property="og:image:height" content="720">
 <meta property="og:locale" content="fr_FR">
 <meta property="og:site_name" content="Monteur Nation">
@@ -240,7 +240,7 @@ section{padding:4rem 1.5rem}
 <section class="hero">
   <div class="hero-eyebrow">100% Gratuit · 100% en ligne · Live sur YouTube</div>
   <div class="hero-badge">🎬 Challenge Monteur Nation · 2 Jours</div>
-  <div class="hero-dates">📅 Du [DATE JOUR 1] au [DATE JOUR 2] 2026 · 20h00 GMT</div>
+  <div class="hero-dates">📅 Du <span class="cfg-day1">[DATE JOUR 1]</span> au <span class="cfg-day2">[DATE JOUR 2]</span> <span class="cfg-year">2026</span> · <span class="cfg-time">20h00 GMT</span></div>
   <h1>Apprends à monter des vidéos <em>pro</em> avec Adobe Premiere Pro<br/>et découvre comment en faire une source de revenus</h1>
   <p class="hero-sub">Pendant 2 jours, je t'ouvre mon écran en direct sur YouTube et je t'apprends les bases du montage vidéo professionnel — même si tu pars de zéro.</p>
 
@@ -586,7 +586,7 @@ section{padding:4rem 1.5rem}
     <div class="divider reveal" style="background:linear-gradient(90deg,var(--purple),var(--purple-light))"></div>
     <div class="final-cta-box reveal">
       <h3>2 jours · 100% gratuit · 100% en ligne</h3>
-      <p>📅 Du [DATE JOUR 1] au [DATE JOUR 2] 2026, à 20h00 GMT sur YouTube.<br/>Clique ci-dessous pour rejoindre le groupe WhatsApp et recevoir tous les liens.</p>
+      <p>📅 Du <span class="cfg-day1">[DATE JOUR 1]</span> au <span class="cfg-day2">[DATE JOUR 2]</span> <span class="cfg-year">2026</span>, à <span class="cfg-time">20h00 GMT</span> sur YouTube.<br/>Clique ci-dessous pour rejoindre le groupe WhatsApp et recevoir tous les liens.</p>
       <a href="#" id="btn-cta-link" class="btn-cta whatsapp-link">JE RÉSERVE MA PLACE MAINTENANT<small>Redirection vers WhatsApp</small></a>
     </div>
   </div>
@@ -647,16 +647,30 @@ window.addEventListener('scroll',()=>{
 <!-- END Pixel Code --> 
 
 <script>
+  // ⚙️ CONFIGURATION CENTRALE — modifie uniquement ces valeurs, tout le reste de la page se met à jour automatiquement
   const CONFIG = {
-  BTN_CTA_CHARIOW: "https://paiement.dekel-dev.com/monteur-nation-essentiel/checkout?chw_campaign=SCWGJMOWL1",
-  BTN_CTA_FIITSA: "https://boutique.dekel-dev.com/checkout?product=monteur-nation-essentiel-formation-complete-maitrisez-le-montage-video-adobe-premiere-pro",
-  BTN_CTA_WHATSAPP_GROUP: "https://chat.whatsapp.com/GTYSMJRyYttKKuqFJV60Ur?mode=gi_t"
-};
+    BTN_CTA_CHARIOW: "https://paiement.dekel-dev.com/monteur-nation-essentiel/checkout?chw_campaign=SCWGJMOWL1",
+    BTN_CTA_FIITSA: "https://boutique.dekel-dev.com/checkout?product=monteur-nation-essentiel-formation-complete-maitrisez-le-montage-video-adobe-premiere-pro",
+    BTN_CTA_WHATSAPP_GROUP: "https://chat.whatsapp.com/GTYSMJRyYttKKuqFJV60Ur?mode=gi_t",
+    DATES: {
+      DAY1: "15 Juillet",   // ex: "15 Juillet"
+      DAY2: "16 Juillet",   // ex: "16 Juillet"
+      YEAR: "2026",
+      TIME: "20h00 GMT"
+    }
+  };
 
   (function(){
+    // Liens WhatsApp
     document.querySelectorAll(".whatsapp-link").forEach(function(btn){
       btn.href = CONFIG.BTN_CTA_WHATSAPP_GROUP;
     });
+
+    // Dates du challenge — mises à jour partout dans la page via ces classes
+    document.querySelectorAll(".cfg-day1").forEach(function(el){ el.textContent = CONFIG.DATES.DAY1; });
+    document.querySelectorAll(".cfg-day2").forEach(function(el){ el.textContent = CONFIG.DATES.DAY2; });
+    document.querySelectorAll(".cfg-year").forEach(function(el){ el.textContent = CONFIG.DATES.YEAR; });
+    document.querySelectorAll(".cfg-time").forEach(function(el){ el.textContent = CONFIG.DATES.TIME; });
   })();
 </script>
 
