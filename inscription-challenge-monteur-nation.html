@@ -3,7 +3,33 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Challenge Monteur Nation — Inscription Gratuite</title>
+<title>Challenge Monteur Nation — Formation Gratuite au Montage Vidéo (2 Jours)</title>
+<meta name="description" content="Rejoins gratuitement le Challenge Monteur Nation : 2 jours de live sur YouTube pour apprendre le montage vidéo professionnel avec Adobe Premiere Pro, même en partant de zéro.">
+<meta name="keywords" content="montage vidéo, Adobe Premiere Pro, formation montage vidéo, challenge gratuit, freelance monteur vidéo, Cameroun, Afrique">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Dekel Dev">
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="/img/favicon.png">
+<link rel="apple-touch-icon" href="/img/image.png">
+<meta name="theme-color" content="#00005b">
+
+<!-- Open Graph / Facebook / WhatsApp -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="http://academy.dekel-dev.com/inscription-challenge-monteur-nation.html">
+<meta property="og:title" content="Challenge Monteur Nation — Formation Gratuite au Montage Vidéo (2 Jours)">
+<meta property="og:description" content="2 jours de live gratuit sur YouTube pour apprendre le montage vidéo pro avec Adobe Premiere Pro et poser les bases de tes premiers revenus freelance.">
+<meta property="og:image" content="/img/image.png">
+<meta property="og:image:width" content="720">
+<meta property="og:image:height" content="720">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="Monteur Nation">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Challenge Monteur Nation — Formation Gratuite au Montage Vidéo (2 Jours)">
+<meta name="twitter:description" content="2 jours de live gratuit sur YouTube pour apprendre le montage vidéo pro avec Adobe Premiere Pro, même en partant de zéro.">
+<meta name="twitter:image" content="/img/image.png">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
@@ -203,10 +229,7 @@ section{padding:4rem 1.5rem}
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Open+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap');
 </style>
 
-<!-- LIEN WHATSAPP : remplace cette valeur unique par ton vrai lien de groupe / redirection -->
-<script>
-  window.WHATSAPP_LINK = "https://wa.me/000000000000?text=Je%20veux%20rejoindre%20le%20Challenge%20Monteur%20Nation";
-</script>
+
 
 <!-- COUNTDOWN -->
 <div class="countdown-bar">
@@ -221,13 +244,15 @@ section{padding:4rem 1.5rem}
   <h1>Apprends à monter des vidéos <em>pro</em> avec Adobe Premiere Pro<br/>et découvre comment en faire une source de revenus</h1>
   <p class="hero-sub">Pendant 2 jours, je t'ouvre mon écran en direct sur YouTube et je t'apprends les bases du montage vidéo professionnel — même si tu pars de zéro.</p>
 
+  <!-- 
   <div class="hero-video">
     <iframe src="https://www.youtube.com/embed/ywouCmosgu8?si=51rgI429HYd3pYBm&amp;controls=1" title="Aperçu du Challenge Monteur Nation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
   </div>
+-->
 
   <div class="places-warning">⚠️ Places limitées pour un accompagnement de qualité</div>
   <div class="btn-cta-wrap">
-    <a href="#" class="btn-cta whatsapp-link">
+    <a href="#" id="btn-cta-link" class="btn-cta whatsapp-link">
       JE RÉSERVE MA PLACE GRATUITEMENT
       <small>Redirection vers le groupe WhatsApp du challenge</small>
     </a>
@@ -253,7 +278,7 @@ section{padding:4rem 1.5rem}
     </div>
   </div>
   <div class="btn-cta-wrap reveal" style="margin-top:2rem">
-    <a href="#" class="btn-cta whatsapp-link">JE RÉSERVE MA PLACE MAINTENANT →<small>C'est gratuit · Places limitées</small></a>
+    <a href="#" id="btn-cta-link" class="btn-cta whatsapp-link">JE RÉSERVE MA PLACE MAINTENANT →<small>C'est gratuit · Places limitées</small></a>
   </div>
 </section>
 
@@ -349,7 +374,7 @@ section{padding:4rem 1.5rem}
     </div>
 
     <div class="btn-cta-wrap reveal" style="margin-top:2rem">
-      <a href="#" class="btn-cta whatsapp-link">JE REJOINS LE CHALLENGE →<small>C'est gratuit · Places limitées</small></a>
+      <a href="#" id="btn-cta-link" class="btn-cta whatsapp-link">JE REJOINS LE CHALLENGE →<small>C'est gratuit · Places limitées</small></a>
     </div>
   </div>
 </section>
@@ -390,7 +415,7 @@ section{padding:4rem 1.5rem}
     </div>
 
     <div class="btn-cta-wrap reveal" style="margin-top:1.5rem">
-      <a href="#" class="btn-cta whatsapp-link">JE RÉSERVE MA PLACE →<small>C'est gratuit · Places limitées</small></a>
+      <a href="#" id="btn-cta-link" class="btn-cta whatsapp-link">JE RÉSERVE MA PLACE →<small>C'est gratuit · Places limitées</small></a>
     </div>
   </div>
 </section>
@@ -480,7 +505,7 @@ section{padding:4rem 1.5rem}
       </div>
     </div>
     <div class="btn-cta-wrap reveal" style="margin-top:2rem">
-      <a href="#" class="btn-cta whatsapp-link">JE VEUX APPRENDRE À MONTER COMME EUX →<small>Gratuit · 2 jours de live</small></a>
+      <a href="#" id="btn-cta-link" class="btn-cta whatsapp-link">JE VEUX APPRENDRE À MONTER COMME EUX →<small>Gratuit · 2 jours de live</small></a>
     </div>
   </div>
 </section>
@@ -512,7 +537,7 @@ section{padding:4rem 1.5rem}
       </div>
     </div>
     <div class="btn-cta-wrap reveal" style="margin-top:2rem">
-      <a href="#" class="btn-cta whatsapp-link">JE M'INSCRIS AU CHALLENGE →<small>C'est gratuit · Places limitées</small></a>
+      <a href="#" id="btn-cta-link" class="btn-cta whatsapp-link">JE M'INSCRIS AU CHALLENGE →<small>C'est gratuit · Places limitées</small></a>
     </div>
   </div>
 </section>
@@ -562,7 +587,7 @@ section{padding:4rem 1.5rem}
     <div class="final-cta-box reveal">
       <h3>2 jours · 100% gratuit · 100% en ligne</h3>
       <p>📅 Du [DATE JOUR 1] au [DATE JOUR 2] 2026, à 20h00 GMT sur YouTube.<br/>Clique ci-dessous pour rejoindre le groupe WhatsApp et recevoir tous les liens.</p>
-      <a href="#" class="btn-cta whatsapp-link">JE RÉSERVE MA PLACE MAINTENANT<small>Redirection vers WhatsApp</small></a>
+      <a href="#" id="btn-cta-link" class="btn-cta whatsapp-link">JE RÉSERVE MA PLACE MAINTENANT<small>Redirection vers WhatsApp</small></a>
     </div>
   </div>
 </section>
@@ -578,12 +603,10 @@ section{padding:4rem 1.5rem}
 <!-- STICKY CTA -->
 <div class="sticky-cta" id="stickyCta">
   <div class="sticky-label">Challenge gratuit<small>2 jours · Places limitées</small></div>
-  <a href="#" class="sticky-btn whatsapp-link">JE M'INSCRIS →</a>
+  <a href="#"  class="sticky-btn whatsapp-link">JE M'INSCRIS →</a>
 </div>
 
 <script>
-document.querySelectorAll('.whatsapp-link').forEach(function(el){ el.href = window.WHATSAPP_LINK; });
-
 function startTimer(){
   function updateTimer(){
     const now = new Date();
@@ -614,7 +637,60 @@ const sticky=document.getElementById('stickyCta');
 window.addEventListener('scroll',()=>{
   sticky.classList.toggle('visible',window.scrollY>600);
 });
+
+
 </script>
 
+
+<!-- Pixel Code - https://prouvia.com/ -->
+<script defer src="https://prouvia.com/pixel/6IUFu9WorSdDgXL2tqSyhgd3BnhqDkJD"> </script>
+<!-- END Pixel Code --> 
+
+<script>
+  const CONFIG = {
+  BTN_CTA_CHARIOW: "https://paiement.dekel-dev.com/monteur-nation-essentiel/checkout?chw_campaign=SCWGJMOWL1",
+  BTN_CTA_FIITSA: "https://boutique.dekel-dev.com/checkout?product=monteur-nation-essentiel-formation-complete-maitrisez-le-montage-video-adobe-premiere-pro",
+  BTN_CTA_WHATSAPP_GROUP: "https://chat.whatsapp.com/GTYSMJRyYttKKuqFJV60Ur?mode=gi_t"
+};
+
+  (function(){
+    document.querySelectorAll(".whatsapp-link").forEach(function(btn){
+      btn.href = CONFIG.BTN_CTA_WHATSAPP_GROUP;
+    });
+  })();
+</script>
+
+
+<script type="text/javascript">
+(function (v, i, d, a, l, y, t, c, s) {
+    y='_'+d.toLowerCase();c=d+'L';if(!v[d]){v[d]={};}if(!v[c]){v[c]={};}if(!v[y]){v[y]={};}var vl='Loader',vli=v[y][vl],vsl=v[c][vl + 'Script'],vlf=v[c][vl + 'Loaded'],ve='Embed';
+    if (!vsl){vsl=function(u,cb){
+        if(t){cb();return;}s=i.createElement("script");s.type="text/javascript";s.async=1;s.src=u;
+        if(s.readyState){s.onreadystatechange=function(){if(s.readyState==="loaded"||s.readyState=="complete"){s.onreadystatechange=null;vlf=1;cb();}};}else{s.onload=function(){vlf=1;cb();};}
+        i.getElementsByTagName("head")[0].appendChild(s);
+    };}
+    vsl(l+'loader.min.js',function(){if(!vli){var vlc=v[c][vl];vli=new vlc();}vli.loadScript(l+'player.min.js',function(){var vec=v[d][ve];t=new vec();t.run(a);});});
+})(window, document, 'Vidalytics', 'vidalytics_embed_f0bqjC3tLTK30o0r', 'https://fast.vidalytics.com/embeds/aysPZYfz/f0bqjC3tLTK30o0r/');
+</script>
+
+
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1291396509304461');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1291396509304461&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
 </body>
 </html>
